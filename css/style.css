@@ -105,3 +105,39 @@ html {
   color: var(--text);
   margin-bottom: 2.5rem;
 }
+
+/* ── About ── */
+.avatar-placeholder {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: var(--surface);
+  border: 3px solid var(--border);
+  font-size: 5rem;
+  color: var(--text-muted);
+}
+
+.btn-accent {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+  background-color: var(--accent-dark);
+  border-color: var(--accent-dark);
+  color: #ffffff;
+}
+
+.btn-outline-accent {
+  background-color: transparent;
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn-outline-accent:hover,
+.btn-outline-accent:focus {
+  background-color: var(--accent);
+  color: #ffffff;
+}
