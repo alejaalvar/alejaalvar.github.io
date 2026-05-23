@@ -256,3 +256,27 @@ html {
   color: #ffffff;
   border-color: var(--accent);
 }
+
+/* ── Contact ── */
+.contact-form .form-label {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.contact-form .form-control {
+  background-color: var(--surface);
+  border-color: var(--border);
+  color: var(--text);
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-form .form-control::placeholder {
+  color: var(--text-muted);
+}
+
+.contact-form .form-control:focus {
+  background-color: var(--surface);
+  border-color: var(--accent);
+  color: var(--text);
+  box-shadow: 0 0 0 0.2rem rgba(91, 127, 166, 0.25);
+}
