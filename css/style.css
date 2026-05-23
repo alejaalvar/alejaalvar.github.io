@@ -1,0 +1,33 @@
+:root {
+  --bg:          #ffffff;
+  --surface:     #f5f5f5;
+  --text:        #1a1a1a;
+  --text-muted:  #666666;
+  --accent:      #5b7fa6;
+  --accent-dark: #4a6d93;
+  --border:      #e0e0e0;
+  --nav-bg:      #ffffff;
+}
+
+[data-theme="dark"] {
+  --bg:          #1e1e2e;
+  --surface:     #2a2a3e;
+  --text:        #e0e0e0;
+  --text-muted:  #999999;
+  --accent:      #5b7fa6;
+  --accent-dark: #4a6d93;
+  --border:      #3a3a4e;
+  --nav-bg:      #1e1e2e;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
