@@ -237,3 +237,22 @@ html {
 .work-bullets li {
   margin-bottom: 0.4rem;
 }
+
+/* ── Skills ── */
+.skill-badge {
+  display: inline-block;
+  background-color: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+  padding: 0.35rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.skill-badge:hover {
+  background-color: var(--accent);
+  color: #ffffff;
+  border-color: var(--accent);
+}
