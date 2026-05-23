@@ -190,3 +190,50 @@ html {
 #projectsCarousel {
   padding-bottom: 2.5rem;
 }
+
+/* ── Previous Work ── */
+.subsection-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+.work-item {
+  padding: 1.25rem;
+  border-left: 3px solid var(--accent);
+  background-color: var(--surface);
+  border-radius: 0 0.5rem 0.5rem 0;
+  margin-bottom: 1.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.work-date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.gpa-badge {
+  display: inline-block;
+  background-color: var(--accent);
+  color: #ffffff;
+  font-size: 0.75rem;
+  padding: 0.2em 0.6em;
+  border-radius: 0.25rem;
+  font-weight: 600;
+}
+
+.work-bullets {
+  color: var(--text-muted);
+  padding-left: 1.2rem;
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.work-bullets li {
+  margin-bottom: 0.4rem;
+}
