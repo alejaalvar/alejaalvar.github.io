@@ -9,6 +9,17 @@
   --nav-bg:      #ffffff;
 }
 
+[data-theme="light"] {
+  --bg:          #ffffff;
+  --surface:     #f5f5f5;
+  --text:        #1a1a1a;
+  --text-muted:  #666666;
+  --accent:      #5b7fa6;
+  --accent-dark: #4a6d93;
+  --border:      #e0e0e0;
+  --nav-bg:      #ffffff;
+}
+
 [data-theme="dark"] {
   --bg:          #1e1e2e;
   --surface:     #2a2a3e;
