@@ -1,34 +1,37 @@
 :root {
-  --bg:          #ffffff;
-  --surface:     #f5f5f5;
-  --text:        #1a1a1a;
-  --text-muted:  #666666;
-  --accent:      #5b7fa6;
+  --bg: #ffffff;
+  --surface: #f5f5f5;
+  --text: #1a1a1a;
+  --text-muted: #666666;
+  /*--accent: #5b7fa6;*/
+  --accent: #507395;
   --accent-dark: #4a6d93;
-  --border:      #e0e0e0;
-  --nav-bg:      #ffffff;
+  --border: #e0e0e0;
+  --nav-bg: #ffffff;
 }
 
 [data-theme="light"] {
-  --bg:          #ffffff;
-  --surface:     #f5f5f5;
-  --text:        #1a1a1a;
-  --text-muted:  #666666;
-  --accent:      #5b7fa6;
+  --bg: #ffffff;
+  --surface: #f5f5f5;
+  --text: #1a1a1a;
+  --text-muted: #666666;
+  /*--accent:      #5b7fa6;*/
+  --accent: #507395;
   --accent-dark: #4a6d93;
-  --border:      #e0e0e0;
-  --nav-bg:      #ffffff;
+  --border: #e0e0e0;
+  --nav-bg: #ffffff;
 }
 
 [data-theme="dark"] {
-  --bg:          #1e1e2e;
-  --surface:     #2a2a3e;
-  --text:        #e0e0e0;
-  --text-muted:  #999999;
-  --accent:      #5b7fa6;
+  --bg: #1e1e2e;
+  --surface: #2a2a3e;
+  --text: #e0e0e0;
+  --text-muted: #999999;
+  /*--accent: #5b7fa6;*/
+  --accent: #507395;
   --accent-dark: #4a6d93;
-  --border:      #3a3a4e;
-  --nav-bg:      #1e1e2e;
+  --border: #3a3a4e;
+  --nav-bg: #1e1e2e;
 }
 
 *,
@@ -40,14 +43,18 @@
 body {
   background-color: var(--bg);
   color: var(--text);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 /* ── Navbar ── */
 #main-nav {
   background-color: var(--nav-bg);
   border-bottom: 1px solid var(--border);
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 #main-nav .navbar-brand {
@@ -69,7 +76,9 @@ body {
   background-color: transparent;
   border-radius: 0.375rem;
   padding: 0.25rem 0.6rem;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 #theme-toggle:hover {
@@ -151,7 +160,9 @@ html {
   padding: 2.5rem 2rem;
   max-width: 640px;
   text-align: center;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .project-title {
@@ -249,7 +260,10 @@ html {
   padding: 0.35rem 1rem;
   font-size: 0.875rem;
   font-weight: 500;
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .skill-badge:hover {
@@ -268,7 +282,10 @@ html {
   background-color: var(--surface);
   border-color: var(--border);
   color: var(--text);
-  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .contact-form .form-control::placeholder {
@@ -283,7 +300,12 @@ html {
 }
 
 /* ── Typography ── */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--text);
 }
 
