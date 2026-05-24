@@ -1,274 +1,413 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="light">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alejandro Alvarado</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-
-<nav class="navbar navbar-expand-lg fixed-top" id="main-nav">
-  <div class="container">
-    <a class="navbar-brand fw-semibold" href="#about">Alejandro Alvarado</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navMenu" aria-controls="navMenu"
-            aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-      <button class="btn btn-sm" id="theme-toggle" aria-label="Toggle dark mode">
-        <i class="bi bi-moon-fill" id="theme-icon"></i>
-      </button>
-    </div>
-  </div>
-</nav>
-
-<section id="about" class="section-padding">
-  <div class="container">
-    <div class="row align-items-center g-5">
-      <div class="col-md-4 text-center">
-        <div class="avatar-placeholder mx-auto d-flex align-items-center justify-content-center">
-          <i class="bi bi-person-fill"></i>
-        </div>
-      </div>
-      <div class="col-md-8">
-        <h1 class="display-5 fw-bold" style="color: var(--text);">Alejandro Alvarado</h1>
-        <p class="mb-3" style="color: var(--text-muted);">Computer Science Student at Portland State University</p>
-        <p style="color: var(--text);">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <div class="d-flex gap-3 mt-4 flex-wrap">
-          <a href="https://github.com/alejaalvar" target="_blank" rel="noopener" class="btn btn-accent">
-            <i class="bi bi-github me-2" aria-hidden="true"></i>GitHub
-          </a>
-          <a href="https://linkedin.com/in/alejandro-alvarado633627230" target="_blank" rel="noopener" class="btn btn-outline-accent">
-            <i class="bi bi-linkedin me-2" aria-hidden="true"></i>LinkedIn
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="projects" class="section-padding bg-surface">
-  <div class="container">
-    <h2 class="section-title text-center">Projects</h2>
-    <div id="projectsCarousel" class="carousel slide" data-bs-ride="false">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0"
-                class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-  <div class="project-card mx-auto mb-4">
-    <span class="lang-badge mb-3 d-inline-block">Python</span>
-    <h3 class="project-title">PyGons!</h3>
-    <p class="project-desc">
-      A fast-paced space shooter inspired by Asteroids, built with pygame. Features a
-      real-time game loop, delta-time physics, and collision detection. A GitHub Actions
-      CI/CD pipeline automatically builds and releases native executables for Linux,
-      macOS, and Windows on every version tag.
-    </p>
-    <a href="https://github.com/alejaalvar/pygons" target="_blank" rel="noopener"
-       class="btn btn-accent mt-3">
-      <i class="bi bi-github me-2" aria-hidden="true"></i>View on GitHub
-    </a>
-  </div>
-</div>
-<div class="carousel-item">
-  <div class="project-card mx-auto mb-4">
-    <span class="lang-badge mb-3 d-inline-block">JavaScript</span>
-    <h3 class="project-title">Instant Messaging App</h3>
-    <p class="project-desc">
-      A real-time chat application built with Node.js, Express, Socket.IO, and MongoDB.
-      Features JWT authentication, contact management, and full REST APIs. Achieved 100%
-      test coverage with complete project documentation including feature specs and
-      architecture design. Deployed on Railway.
-    </p>
-    <a href="https://github.com/alejaalvar/instant-messaging-app" target="_blank"
-       rel="noopener" class="btn btn-accent mt-3">
-      <i class="bi bi-github me-2" aria-hidden="true"></i>View on GitHub
-    </a>
-  </div>
-</div>
-<div class="carousel-item">
-  <div class="project-card mx-auto mb-4">
-    <span class="lang-badge mb-3 d-inline-block">C</span>
-    <h3 class="project-title">NIX-chat</h3>
-    <p class="project-desc">
-      A UNIX-style chat application written in C that runs entirely on the command line.
-      Clients connect to a relay server via TCP UNIX sockets and exchange messages in
-      real time, supporting up to two concurrent clients.
-    </p>
-    <a href="https://github.com/alejaalvar/NIX-chat" target="_blank" rel="noopener"
-       class="btn btn-accent mt-3">
-      <i class="bi bi-github me-2" aria-hidden="true"></i>View on GitHub
-    </a>
-  </div>
-</div>
-      </div>
-      <button class="carousel-control-prev" type="button"
-              data-bs-target="#projectsCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button"
-              data-bs-target="#projectsCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
-</section>
-
-<section id="work" class="section-padding">
-  <div class="container">
-    <h2 class="section-title">Previous Work</h2>
-    <div class="row g-5">
-
-      <!-- Education -->
-      <div class="col-md-6">
-        <h3 class="subsection-title">Education</h3>
-
-        <div class="work-item">
-          <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
-            <div>
-              <h5 class="mb-0" style="color: var(--text);">Portland State University</h5>
-              <p class="mb-1" style="color: var(--text-muted);">B.S. Computer Science</p>
-              <p class="mb-1">
-                <span class="gpa-badge">GPA: 3.79</span>
-                <span style="color: var(--text-muted); font-size: 0.9rem;"> · Dean's List every quarter</span>
-              </p>
-              <p class="mb-0" style="color: var(--text-muted); font-size: 0.85rem;">
-                Data Structures · Algorithms · OOP · Systems Programming · Full-Stack Web Dev · Software Engineering
-              </p>
-            </div>
-            <span class="work-date">Jun 2025 – Present</span>
-          </div>
-        </div>
-
-        <div class="work-item">
-          <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
-            <div>
-              <h5 class="mb-0" style="color: var(--text);">Clackamas Community College</h5>
-              <p class="mb-1" style="color: var(--text-muted);">A.S. Computer Science</p>
-              <p class="mb-0" style="color: var(--text-muted); font-size: 0.9rem;">President's List every term</p>
-            </div>
-            <span class="work-date">Mar 2022 – Jun 2024</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Experience -->
-      <div class="col-md-6">
-        <h3 class="subsection-title">Experience</h3>
-
-        <div class="work-item">
-          <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
-            <div>
-              <h5 class="mb-0" style="color: var(--text);">Fred Meyer</h5>
-              <p class="mb-0" style="color: var(--text-muted);">Grocery Clerk · Oregon City, OR</p>
-            </div>
-            <span class="work-date">Jul 2021 – Present</span>
-          </div>
-          <ul class="work-bullets">
-            <li>Served as Person in Charge for the Grocery department, coordinating daily operations and supporting a team of associates</li>
-            <li>Trained incoming associates and cross-trained across departments to fill gaps and support team needs</li>
-            <li>Managed stockroom logistics end-to-end: receiving freight, operating a forklift, and maintaining inventory accuracy using Zebra devices</li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alejandro Alvarado</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top" id="main-nav">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="#about">Alejandro Alvarado</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
           </ul>
+          <button
+            class="btn btn-sm"
+            id="theme-toggle"
+            aria-label="Toggle dark mode"
+          >
+            <i class="bi bi-moon-fill" id="theme-icon"></i>
+          </button>
         </div>
       </div>
+    </nav>
 
-    </div>
-  </div>
-</section>
-
-<section id="skills" class="section-padding bg-surface">
-  <div class="container">
-    <h2 class="section-title">Skills</h2>
-
-    <div class="mb-4">
-      <h3 class="subsection-title">Languages</h3>
-      <div class="d-flex flex-wrap gap-2">
-        <span class="skill-badge">C++</span>
-        <span class="skill-badge">C</span>
-        <span class="skill-badge">Python</span>
-        <span class="skill-badge">JavaScript</span>
-        <span class="skill-badge">Bash</span>
-        <span class="skill-badge">HTML</span>
-        <span class="skill-badge">CSS</span>
-      </div>
-    </div>
-
-    <div>
-      <h3 class="subsection-title">Tools &amp; Frameworks</h3>
-      <div class="d-flex flex-wrap gap-2">
-        <span class="skill-badge">Node.js</span>
-        <span class="skill-badge">Express</span>
-        <span class="skill-badge">MongoDB</span>
-        <span class="skill-badge">PostgreSQL</span>
-        <span class="skill-badge">React</span>
-        <span class="skill-badge">Git</span>
-        <span class="skill-badge">Linux</span>
-        <span class="skill-badge">WebSockets</span>
-        <span class="skill-badge">JWT</span>
-        <span class="skill-badge">CI/CD Pipelines</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="section-padding">
-  <div class="container">
-    <h2 class="section-title text-center">Contact</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-8 col-lg-6">
-        <form class="contact-form" novalidate>
-          <div class="mb-3">
-            <label for="contact-name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="contact-name"
-                   placeholder="Your name" required />
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-md-4 text-center">
+            <div
+              class="avatar-placeholder mx-auto d-flex align-items-center justify-content-center"
+            >
+              <i class="bi bi-person-fill"></i>
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="contact-email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="contact-email"
-                   placeholder="your@email.com" required />
+          <div class="col-md-8">
+            <h1 class="display-5 fw-bold" style="color: var(--text)">
+              Alejandro Alvarado
+            </h1>
+            <p class="mb-3" style="color: var(--text-muted)">
+              Computer Science Student at Portland State University
+            </p>
+            <p style="color: var(--text)">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="d-flex gap-3 mt-4 flex-wrap">
+              <a
+                href="https://github.com/alejaalvar"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-accent"
+              >
+                <i class="bi bi-github me-2" aria-hidden="true"></i>GitHub
+              </a>
+              <a
+                href="https://linkedin.com/in/alejandro-alvarado633627230"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-outline-accent"
+              >
+                <i class="bi bi-linkedin me-2" aria-hidden="true"></i>LinkedIn
+              </a>
+            </div>
           </div>
-          <div class="mb-4">
-            <label for="contact-message" class="form-label">Message</label>
-            <textarea class="form-control" id="contact-message"
-                      rows="5" placeholder="Your message..." required></textarea>
-          </div>
-          <button type="submit" class="btn btn-accent w-100">Send Message</button>
-        </form>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<footer class="py-4 text-center" style="background-color: var(--surface); color: var(--text-muted); font-size: 0.875rem; border-top: 1px solid var(--border);">
-  <div class="container">
-    &copy; 2026 Alejandro Alvarado
-  </div>
-</footer>
+    <section id="projects" class="section-padding bg-surface">
+      <div class="container">
+        <h2 class="section-title text-center">Projects</h2>
+        <div id="projectsCarousel" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#projectsCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#projectsCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#projectsCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="project-card mx-auto mb-4">
+                <span class="lang-badge mb-3 d-inline-block">Python</span>
+                <h3 class="project-title">PyGons!</h3>
+                <p class="project-desc">
+                  A fast-paced space shooter inspired by Asteroids, built with
+                  pygame. Features a real-time game loop, delta-time physics,
+                  and collision detection. A GitHub Actions CI/CD pipeline
+                  automatically builds and releases native executables for
+                  Linux, macOS, and Windows on every version tag.
+                </p>
+                <a
+                  href="https://github.com/alejaalvar/pygons"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-accent mt-3"
+                >
+                  <i class="bi bi-github me-2" aria-hidden="true"></i>View on
+                  GitHub
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="project-card mx-auto mb-4">
+                <span class="lang-badge mb-3 d-inline-block">JavaScript</span>
+                <h3 class="project-title">Instant Messaging App</h3>
+                <p class="project-desc">
+                  A real-time chat application built with Node.js, Express,
+                  Socket.IO, and MongoDB. Features JWT authentication, contact
+                  management, and full REST APIs. Achieved 100% test coverage
+                  with complete project documentation including feature specs
+                  and architecture design. Deployed on Railway.
+                </p>
+                <a
+                  href="https://github.com/alejaalvar/instant-messaging-app"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-accent mt-3"
+                >
+                  <i class="bi bi-github me-2" aria-hidden="true"></i>View on
+                  GitHub
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="project-card mx-auto mb-4">
+                <span class="lang-badge mb-3 d-inline-block">C</span>
+                <h3 class="project-title">NIX-chat</h3>
+                <p class="project-desc">
+                  A UNIX-style chat application written in C that runs entirely
+                  on the command line. Clients connect to a relay server via TCP
+                  UNIX sockets and exchange messages in real time, supporting up
+                  to two concurrent clients.
+                </p>
+                <a
+                  href="https://github.com/alejaalvar/NIX-chat"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-accent mt-3"
+                >
+                  <i class="bi bi-github me-2" aria-hidden="true"></i>View on
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#projectsCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#projectsCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
+    <section id="work" class="section-padding">
+      <div class="container">
+        <h2 class="section-title">Previous Work</h2>
+        <div class="row g-5">
+          <!-- Education -->
+          <div class="col-md-6">
+            <h3 class="subsection-title">Education</h3>
+
+            <div class="work-item">
+              <div
+                class="d-flex justify-content-between align-items-start flex-wrap gap-2"
+              >
+                <div>
+                  <h4 class="mb-0" style="color: var(--text)">
+                    Portland State University
+                  </h4>
+                  <p class="mb-1" style="color: var(--text-muted)">
+                    B.S. Computer Science
+                  </p>
+                  <p class="mb-1">
+                    <span class="gpa-badge">GPA: 3.79</span>
+                    <span style="color: var(--text-muted); font-size: 0.9rem">
+                      · Dean's List every quarter</span
+                    >
+                  </p>
+                  <p
+                    class="mb-0"
+                    style="color: var(--text-muted); font-size: 0.85rem"
+                  >
+                    Data Structures · Algorithms · OOP · Systems Programming ·
+                    Full-Stack Web Dev · Software Engineering
+                  </p>
+                </div>
+                <span class="work-date">Jun 2025 – Present</span>
+              </div>
+            </div>
+
+            <div class="work-item">
+              <div
+                class="d-flex justify-content-between align-items-start flex-wrap gap-2"
+              >
+                <div>
+                  <h4 class="mb-0" style="color: var(--text)">
+                    Clackamas Community College
+                  </h4>
+                  <p class="mb-1" style="color: var(--text-muted)">
+                    A.S. Computer Science
+                  </p>
+                  <p
+                    class="mb-0"
+                    style="color: var(--text-muted); font-size: 0.9rem"
+                  >
+                    President's List every term
+                  </p>
+                </div>
+                <span class="work-date">Mar 2022 – Jun 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience -->
+          <div class="col-md-6">
+            <h3 class="subsection-title">Experience</h3>
+
+            <div class="work-item">
+              <div
+                class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2"
+              >
+                <div>
+                  <h4 class="mb-0" style="color: var(--text)">Fred Meyer</h4>
+                  <p class="mb-0" style="color: var(--text-muted)">
+                    Grocery Clerk · Oregon City, OR
+                  </p>
+                </div>
+                <span class="work-date">Jul 2021 – Present</span>
+              </div>
+              <ul class="work-bullets">
+                <li>
+                  Served as Person in Charge for the Grocery department,
+                  coordinating daily operations and supporting a team of
+                  associates
+                </li>
+                <li>
+                  Trained incoming associates and cross-trained across
+                  departments to fill gaps and support team needs
+                </li>
+                <li>
+                  Managed stockroom logistics end-to-end: receiving freight,
+                  operating a forklift, and maintaining inventory accuracy using
+                  Zebra devices
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-padding bg-surface">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="mb-4">
+          <h3 class="subsection-title">Languages</h3>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="skill-badge">C++</span>
+            <span class="skill-badge">C</span>
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">Bash</span>
+            <span class="skill-badge">HTML</span>
+            <span class="skill-badge">CSS</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="subsection-title">Tools &amp; Frameworks</h3>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="skill-badge">Node.js</span>
+            <span class="skill-badge">Express</span>
+            <span class="skill-badge">MongoDB</span>
+            <span class="skill-badge">PostgreSQL</span>
+            <span class="skill-badge">React</span>
+            <span class="skill-badge">Git</span>
+            <span class="skill-badge">Linux</span>
+            <span class="skill-badge">WebSockets</span>
+            <span class="skill-badge">JWT</span>
+            <span class="skill-badge">CI/CD Pipelines</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <h2 class="section-title text-center">Contact</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+            <form class="contact-form" novalidate>
+              <div class="mb-3">
+                <label for="contact-name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="contact-name"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="contact-email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="contact-email"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label for="contact-message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="contact-message"
+                  rows="5"
+                  placeholder="Your message..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-accent w-100">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="py-4 text-center"
+      style="
+        background-color: var(--surface);
+        color: var(--text-muted);
+        font-size: 0.875rem;
+        border-top: 1px solid var(--border);
+      "
+    >
+      <div class="container">&copy; 2026 Alejandro Alvarado</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
