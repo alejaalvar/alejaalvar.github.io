@@ -1,3 +1,6 @@
+/*
+This is our fallback theme (e.g. before JS runs)
+*/
 :root {
   --bg: #ffffff;
   --surface: #f5f5f5;
@@ -10,6 +13,11 @@
   --nav-bg: #ffffff;
 }
 
+/*
+use JS to dynamically change the data-theme
+attribute of the html element for toggling
+light and dark mode
+*/
 [data-theme="light"] {
   --bg: #ffffff;
   --surface: #f5f5f5;
@@ -26,9 +34,10 @@
   --bg: #1e1e2e;
   --surface: #2a2a3e;
   --text: #e0e0e0;
+  --text-alt: #1a1a1a;
   --text-muted: #999999;
-  /*--accent: #5b7fa6;*/
-  --accent: #507395;
+  /* --accent: #507395; */
+  --accent: #7a99b8;
   --accent-dark: #4a6d93;
   --border: #3a3a4e;
   --nav-bg: #1e1e2e;
@@ -116,6 +125,23 @@ html {
 }
 
 /* ── About ── */
+
+/*
+These only apply when dark mode has been toggled, basically
+ensuring that they are more *specific* than the default light
+mode colors
+*/
+[data-theme="dark"] .btn-accent,
+[data-theme="dark"] .lang-badge,
+[data-theme="dark"] .gpa-badge {
+  color: #1a1a1a;
+}
+
+[data-theme="dark"] .btn-accent:hover,
+[data-theme="dark"] .btn-accent:focus {
+  color: #1a1a1a;
+}
+
 .avatar-placeholder {
   width: 180px;
   height: 180px;
