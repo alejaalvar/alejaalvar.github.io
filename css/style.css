@@ -6,7 +6,6 @@ This is our fallback theme (e.g. before JS runs)
   --surface: #f5f5f5;
   --text: #1a1a1a;
   --text-muted: #666666;
-  /*--accent: #5b7fa6;*/
   --accent: #507395;
   --accent-dark: #4a6d93;
   --border: #e0e0e0;
@@ -23,7 +22,6 @@ light and dark mode
   --surface: #f5f5f5;
   --text: #1a1a1a;
   --text-muted: #666666;
-  /*--accent:      #5b7fa6;*/
   --accent: #507395;
   --accent-dark: #4a6d93;
   --border: #e0e0e0;
@@ -36,7 +34,6 @@ light and dark mode
   --text: #e0e0e0;
   --text-alt: #1a1a1a;
   --text-muted: #999999;
-  /* --accent: #507395; */
   --accent: #7a99b8;
   --accent-dark: #4a6d93;
   --border: #3a3a4e;
@@ -55,6 +52,14 @@ body {
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
+}
+
+.muted {
+  color: var(--text-muted);
+}
+
+.black-text {
+  color: var(--text);
 }
 
 /* ── Navbar ── */
@@ -264,6 +269,15 @@ mode colors
   font-weight: 600;
 }
 
+.dean-list-badge,
+.president-list-badge {
+  font-size: 0.9rem;
+}
+
+.courses-list {
+  font-size: 0.85rem;
+}
+
 .work-bullets {
   color: var(--text-muted);
   padding-left: 1.2rem;
@@ -323,6 +337,12 @@ mode colors
   border-color: var(--accent);
   color: var(--text);
   box-shadow: 0 0 0 0.2rem rgba(91, 127, 166, 0.25);
+}
+
+.footer {
+  background-color: var(--surface);
+  font-size: 0.875rem;
+  border-top: 1px solid var(--border);
 }
 
 /* ── Typography ── */
