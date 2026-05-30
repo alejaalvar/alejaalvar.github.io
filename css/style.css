@@ -57,6 +57,14 @@ body {
     color 0.3s ease;
 }
 
+h1 {
+  color: var(--text);
+}
+
+.muted {
+  color: var(--text-muted);
+}
+
 /* ── Navbar ── */
 #main-nav {
   background-color: var(--nav-bg);
