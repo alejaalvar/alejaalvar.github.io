@@ -6,7 +6,6 @@ This is our fallback theme (e.g. before JS runs)
   --surface: #f5f5f5;
   --text: #1a1a1a;
   --text-muted: #666666;
-  /*--accent: #5b7fa6;*/
   --accent: #507395;
   --accent-dark: #4a6d93;
   --border: #e0e0e0;
@@ -23,7 +22,6 @@ light and dark mode
   --surface: #f5f5f5;
   --text: #1a1a1a;
   --text-muted: #666666;
-  /*--accent:      #5b7fa6;*/
   --accent: #507395;
   --accent-dark: #4a6d93;
   --border: #e0e0e0;
@@ -36,7 +34,6 @@ light and dark mode
   --text: #e0e0e0;
   --text-alt: #1a1a1a;
   --text-muted: #999999;
-  /* --accent: #507395; */
   --accent: #7a99b8;
   --accent-dark: #4a6d93;
   --border: #3a3a4e;
@@ -56,12 +53,6 @@ body {
     background-color 0.3s ease,
     color 0.3s ease;
 }
-
-/*
-h1 {
-  color: var(--text);
-}
-  */
 
 .muted {
   color: var(--text-muted);
